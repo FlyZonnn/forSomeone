@@ -1,0 +1,87 @@
+/* Reset dan pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;  /* Background dengan warna netral */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+}
+
+/* Kontainer utama */
+.container {
+    position: relative;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Animasi teks */
+.love-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8A2BE2;  /* Warna ungu */
+    opacity: 0;  /* Mulai dari transparan */
+    animation: fadeIn 3s ease-out forwards;  /* Animasi fade in saja */
+    margin-bottom: 20px; /* Memberikan jarak antara teks dan tombol */
+}
+
+/* Animasi teks muncul perlahan */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Tombol kejutan */
+.surprise-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #8A2BE2; /* Warna ungu */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+.surprise-btn:hover {
+    background-color: #7A1DBF;  /* Ungu lebih gelap saat hover */
+    transform: translateY(-5px);
+}
+
+/* Menambahkan efek background dan transisi halus pada halaman */
+body {
+    background: linear-gradient(135deg, #cce7ff, #f4f4f9); /* Gradasi halus dengan warna biru muda */
+    animation: gradientAnimation 5s ease-in-out infinite;
+}
+
+/* Efek transisi background */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #cce7ff, #f4f4f9);
+    }
+    50% {
+        background: linear-gradient(135deg, #f4f4f9, #cce7ff);
+    }
+    100% {
+        background: linear-gradient(135deg, #cce7ff, #f4f4f9);
+    }
+}
